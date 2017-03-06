@@ -1,0 +1,311 @@
+/***********************************
+ *  This class manages the number 
+ *  of balls the player has left
+ *  and can be change by passing
+ *  different values to the constructor.
+ *  
+ *  It also manages the ball being thrown and contains
+ *  the management of the player being drawn.
+ *
+ *
+ *  Written by: Zachary Calabrese
+ *  Email: zcalabrese22@gmail.com
+************************************/
+
+import java.util.*;
+
+import javax.imageio.ImageIO;
+import javax.swing.Timer;
+
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+
+import javax.swing.*;
+
+public class Balls extends GameObject implements ActionListener{
+	private int current_ball_count;
+	private int first_ball_x;
+	private int first_ball_y;
+	private int ball_size;
+	private int original_ball_thrown_radius;
+	private int ball_thrown_radius;
+	private int width_of_person;
+	private int height_of_person;
+	private int ball_movement;
+	private int original_ball_thrown_movement_x;
+	private int ball_thrown_movement_x;
+	private int original_ball_thrown_movement_y;
+	private int ball_thrown_movement_y;
+	private int ballThrowSpeed;
+	private int yPosBallThrown;
+	private int yPosBallThrown2;
+	private int ball_slow_down_minimize;
+	private Image ball_half;
+	private BufferedImage ball_full;
+	private Image ball_backing;
+	private Image player_1;
+	private ImageIcon icon;
+	private int max_balls_to_draw;
+	private int max_balls_to_be_thrown;
+	Timer timer;
+
+	//ActionListener updateProBar;
+
+	/**
+	 * Constructor takes in input of the initial ball count
+	 */
+	public Balls(int current_ball_count){
+		this.current_ball_count = current_ball_count;
+		
+		// Set the x and y coordinates of the first ball
+		first_ball_x = 840;
+		first_ball_y = 610;
+		
+		// Set the size of the ball drawn on the rack
+		ball_size = 65;
+		
+		// Setting max ball to be drawn the same as the constructor
+		max_balls_to_draw = current_ball_count;
+		max_balls_to_be_thrown = max_balls_to_draw + 1;
+		
+		width_of_person = 100;
+		height_of_person = 200;
+		
+		original_ball_thrown_radius = 70;
+		ball_thrown_radius = original_ball_thrown_radius;
+		
+		// Used to maintain the shrinking of the ball as it is being thrown
+		ball_slow_down_minimize = ball_thrown_radius;
+		
+		// Values of where the ball should be painted and its original setting to revert to after throw is completed
+		original_ball_thrown_movement_x = getScreenWidth() / 2 + 20;
+		ball_thrown_movement_x = original_ball_thrown_movement_x;
+		original_ball_thrown_movement_y = getScreenHeight() / 3 + 200;
+		ball_thrown_movement_y = original_ball_thrown_movement_y;
+		
+		// Image for half-size basketball
+		icon = new ImageIcon("ball_images/Ball_half.png");
+		ball_half = icon.getImage();
+		ball_half = ball_half.getScaledInstance(ball_size, ball_size/2, Image.SCALE_SMOOTH);
+		
+		// Image for basketball tray
+		icon = new ImageIcon("ball_images/basket_fw.png");
+		ball_backing = icon.getImage();
+		ball_backing = ball_backing.getScaledInstance(355, 75, Image.SCALE_SMOOTH);
+		
+		// Image for player w/o ball
+		icon = new ImageIcon("ball_images/player_1_with_ball.png");
+		player_1 = icon.getImage();
+		player_1 = player_1.getScaledInstance(width_of_person,height_of_person,Image.SCALE_SMOOTH);
+		
+		// Image for ball player is holding
+		try {
+			ball_full = ImageIO.read(new File("ball_images/Ball_full.png"));
+		} catch (IOException e) {
+		}
+		
+		timer = new Timer(20, this);
+		timer.start();
+		/**TIMER WAS NOT NEEDED FOR SIMULATION OF BALL MOVEMENT**/
+		
+	}
+
+	/**
+	 * This class decreases the number of balls on the screen as well
+	 * as sets the coordinates for where the thrown ball should land	
+	 * @param sliderPosition
+	 * @param yPosBallThrown
+	 */
+	public void ballThrown(int sliderPosition, int yPosBallThrown){
+		/*
+		 * Generate two random values to set the position of missed throws
+		 */
+		this.yPosBallThrown = yPosBallThrown;
+		Random r;
+		r = new Random();
+		int Low = 1;
+		int High = 3;
+		int R = r.nextInt(High-Low) + Low;	
+		
+		r = new Random();
+		Low = 1;
+		High = 3;
+		int R2 = r.nextInt(High-Low) + Low;
+		
+		/*
+		 * sliderPosition ranks the throws from 1 to 5, 1 being the best
+		 * and the various if statements set the position of where the ball should
+		 * be thrown.  1 is the only statement that returns a correct hit
+		 */
+		if(sliderPosition == 1){
+			ballThrowSpeed = 2;
+			this.yPosBallThrown = yPosBallThrown;
+			setIsItAHit(true);
+		}else if(sliderPosition == 2){
+			if(R == 1){
+				ballThrowSpeed = 3;
+			}else{
+				ballThrowSpeed = -2;
+			}
+			this.yPosBallThrown = yPosBallThrown;
+			setIsItAHit(false);
+		}else if(sliderPosition == 3){
+			if(R == 1){
+				ballThrowSpeed = 4;
+			}else{
+				ballThrowSpeed = -2;
+			}
+			if(R2 == 1){
+				yPosBallThrown = yPosBallThrown - 25;
+			}else{
+				yPosBallThrown = yPosBallThrown + 25;
+			}
+			setIsItAHit(false);
+		}else if(sliderPosition == 4){
+			if(R == 1){
+				ballThrowSpeed = 4;
+			}else{
+				ballThrowSpeed = -2;
+			}
+			setIsItAHit(false);
+		}else if(sliderPosition == 5){
+			if(R == 1){
+				ballThrowSpeed = 5;
+			}else{
+				ballThrowSpeed = -2;
+			}
+			if(R2 == 1){
+				yPosBallThrown = yPosBallThrown - 50;
+			}else{
+				yPosBallThrown = yPosBallThrown + 50;				
+			}
+			setIsItAHit(false);
+		}								
+
+		current_ball_count--;
+		ballsThrown++;
+		checkIsGameOver();
+		System.out.println("current: "+current_ball_count+" balls thrown: "+ballsThrown);
+		yPosBallThrown2 = yPosBallThrown;
+	}
+	
+	// Increase the number of balls on screen
+	// Possible uses: bonus throws, extra throws gained, etc...
+	public void ballGained(){
+		current_ball_count++;
+	}
+
+	public void actionPerformed(ActionEvent e){
+		update();
+		repaint();
+	}
+	
+	/**
+	 * The update method checks to see if the game is over, if it is
+	 * not over then it checks to see if we should be throwing the ball.
+	 * If we should be throwing the ball it changes the appropriate values
+	 * until it reaches its destinationatwhich point it will reset its value.
+	 * 
+	 * It also updates the movement of the balls on the rack.
+	 */
+	public void update(){
+
+		if(!getGameOver())
+			if(getBallBeingThrown()){		
+				if (ball_thrown_radius != 30)
+					if(ball_slow_down_minimize % 2 == 0)
+						ball_thrown_radius--;
+				
+				ball_slow_down_minimize--;
+				
+				if (ball_thrown_movement_y < yPosBallThrown2){
+					try {
+						Thread.sleep(802);
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					ball_thrown_radius = original_ball_thrown_radius;
+					setBallBeingThrown(false);
+					setTrusteeDunked(true);
+	
+					ball_thrown_movement_x = original_ball_thrown_movement_x;
+					ball_thrown_movement_y = original_ball_thrown_movement_y;
+	
+				}else{
+					ball_thrown_movement_x+=ballThrowSpeed;
+					ball_thrown_movement_y-=2;
+				}
+		}
+
+		if(!getCanWeThrow() && !getBallBeingThrown()){
+			ball_movement--;
+
+			if (ball_movement < (-55 * (ballsThrown))){
+				setCanWeThrow(true);
+				setTrusteeDunked(false);
+			}			
+		}
+	}
+	
+	// Draw green background, white box over that, then the balls over that
+	public void paint(Graphics g){		
+	    Graphics2D g2d = (Graphics2D) g;
+	    
+		//ball_full_resizable.createGraphics();
+		g.drawImage(ball_full, ball_thrown_movement_x, ball_thrown_movement_y, ball_thrown_radius, ball_thrown_radius, null);
+	    
+	    // Draw person
+	    g2d.drawImage(player_1, getScreenWidth()/2 - ball_size/2, getScreenHeight() * 10/16, null);
+	    
+		// Draw ball box
+		g2d.drawImage(ball_backing, first_ball_x - 10, first_ball_y + 16, null);
+		
+		
+		if (getBallBeingThrown()){
+			// Draw the number of balls left starting from position 0 and incrementing based on the ball radius
+			if (max_balls_to_draw < current_ball_count){
+				for(int i = ballsThrown-1; i < max_balls_to_draw; i ++){
+					g2d.drawImage(ball_half, first_ball_x + (i*ball_size) + ball_movement, first_ball_y, null);
+				}	
+			}else{
+				for(int i = ballsThrown-1; i < max_balls_to_draw; i ++){
+					g2d.drawImage(ball_half, first_ball_x + (i*ball_size) + ball_movement, first_ball_y, null);
+				}
+			}
+		}else{
+			// Draw the number of balls left starting from position 0 and incrementing based on the ball radius
+			if (max_balls_to_draw < current_ball_count){
+				for(int i = ballsThrown; i < max_balls_to_draw; i ++){
+					g2d.drawImage(ball_half, first_ball_x + (i*ball_size) + ball_movement, first_ball_y, null);
+				}	
+			}else{
+				for(int i = ballsThrown; i < max_balls_to_draw; i ++){
+					g2d.drawImage(ball_half, first_ball_x + (i*ball_size) + ball_movement, first_ball_y, null);
+				}
+			}	
+		}
+		
+		// End drawing balls left graphic representation
+	}
+
+	public void checkIsGameOver(){
+		if (max_balls_to_be_thrown == ballsThrown){
+			setGameOver();
+			System.out.println("inside if statement");
+			System.out.println("current: "+current_ball_count+" balls thrown: "+ballsThrown);
+			int reply = JOptionPane.showConfirmDialog(null, "No more balls left to throw. Do you want to play again?", "Game Over", JOptionPane.YES_NO_OPTION);
+			if (reply == JOptionPane.YES_OPTION) {
+			    //Menu mm = new Menu(frame, getScreenWidth(), getScreenHeight());
+				//NewPane(mm.MenuLayout());
+				//frame.add(new Menu(frame, getScreenWidth(), getScreenHeight()));
+			} else {
+			    System.exit(0);
+			}
+		}
+	}
+}

@@ -1,0 +1,4 @@
+12/08
+I added the test method which will display the runningJob and readyQ. I hope it will help you guys a little bit.
+
+Bug: the readyQ have #6 job at the end. Probabely, we tranfers the wrong job number. 

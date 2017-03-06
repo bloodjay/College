@@ -1,0 +1,167 @@
+import java.awt.event.*;
+import java.awt.image.BufferedImage;
+
+import javax.imageio.ImageIO;
+import javax.swing.*;
+
+import java.awt.Color;
+import java.io.File;
+import java.io.IOException;
+public class Menu extends JPanel{
+	JFrame frame;
+	ImageIcon icon;
+	private static int screen_width;
+	private static int screen_height;
+	
+	/**
+	 * Constructor that takes in the main frame
+	 */
+	Menu(JFrame frame, int screen_width, int screen_height){
+		this.frame = frame;	
+		Menu.screen_width = screen_width;
+		Menu.screen_height = screen_height;
+	}
+	
+	Menu(){
+		
+	}
+	
+	/**
+	 * Return screen width for easy scaling
+	 * @return screen_width
+	 */
+	static int getScreenWidth(){
+		return screen_width;
+	}
+
+	/**
+	 * Return screen height for easy scaling
+	 * @return screen_height
+	 */
+	static int getScreenHeight(){
+		return screen_height;
+	}
+	
+	/**
+	 * Clear the screen before painting new image
+	 */
+	public void ClearScreenContents(){
+		frame.getContentPane().removeAll();
+	}
+	
+	/**
+	 * After clearing the screen send the new panel here to paint it to the frame
+	 */
+	public void NewPane(JPanel panel){
+		frame.getContentPane().add(panel);
+		frame.getContentPane().repaint();
+		frame.setVisible(true);
+		panel.requestFocusInWindow();
+	}
+	
+	/**
+	 * Returns a panel of our main menu
+	 * @throws IOException 
+	 */
+	public JPanel MenuLayout(){
+		// Added these two lines here to see if screen would load faster
+		final GameObject go = new GameObject();
+		go.initializeGame();
+		
+		setLayout(null);
+		/*
+		 * This is the panel and its features for the buttons
+		 */
+		JPanel panel = new JPanel();
+		panel.setBounds(0, 0, screen_width, screen_height);
+		add(panel);
+		panel.setLayout(null);
+		panel.setOpaque(false);
+	
+		/*
+		 * This is the panel and its features for the background image
+		 */
+		JPanel mainPanel = new JPanel();	
+		mainPanel.setBounds(0, 0, screen_width, screen_height);
+		add(mainPanel);
+		
+		icon = new ImageIcon("Main_Screen_r2.png");
+		JLabel picLabel = new JLabel(icon);
+			
+		
+		/**
+		 * New Game button
+		 * will clear screen
+		 * and start the GameObject class
+		 */
+		JButton NewGame = new JButton("Start Game");
+		NewGame.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				ClearScreenContents();
+				// Add NewGame function
+				//NewPane(go);
+				//NewPane(new SelectionScreen(frame));
+				NewPane(go);
+			}
+		});
+		
+		
+		NewGame.setBounds(785, 620, 110, 40);
+		NewGame.setBackground(Color.YELLOW);
+		panel.add(NewGame);
+
+		/**
+		 * Instructions button
+		 * will clear the screen
+		 * and start the Instructions class
+		 */
+		JButton Instructions = new JButton("Instructions");
+		Instructions.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				ClearScreenContents();
+				try{
+					NewPane(new Instructions(frame));
+				}catch(IOException e){
+					e.printStackTrace();
+				}
+			}
+		});
+		
+		Instructions.setBounds(920, 620, 110, 40);
+		Instructions.setBackground(Color.YELLOW);
+		panel.add(Instructions);
+		
+		/**
+		 * HighScore button
+		 * will clear the screen
+		 * and start the HighScore class
+		 */
+		JButton HighScore = new JButton("High Scores");
+		HighScore.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				ClearScreenContents();
+				// Add High Score function
+				try{
+					NewPane(new Highscore(frame));
+				}catch(IOException e){
+					e.printStackTrace();
+				}
+				
+				/*
+				Highscore hs = new Highscore();
+				NewPane(hs.HighscoreLayout());
+				*/
+			}
+		});
+		HighScore.setBounds(1055, 620, 110, 40);
+		HighScore.setBackground(Color.YELLOW);
+		panel.add(HighScore);
+		
+		// For the time being, added image at end so it shows properly; going to change to paintComponent soon
+		mainPanel.add(picLabel);
+		
+		frame.add(panel);
+		
+		return mainPanel;
+	}
+}

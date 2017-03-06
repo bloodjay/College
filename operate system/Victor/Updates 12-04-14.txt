@@ -1,0 +1,79 @@
+12/04/14
+
+*****************************Fixed******************************************
+-Fatal Error 13
+	*error was caused by a misscalculation on the add method of memManagment
+-waiting queue to memory
+	*We are now able to bring a job from the waiting queue to memory when sio drum is not busy
+-Round Robin not working correctly
+	*when a job asked for I/O or asked to be blocked, the job stood at the front of the ready queue. Fixed it by calling the function to send it to the back of the
+	 queue
+-MaxCpu time exeeded
+	*when a job was asked for I/O or asked to be blocked, the next job in the queue would sometimes have a TIMEQUANTUM bigger than the remaing time to completion.
+	 fixed by adding a checking case
+
+********************************Bugs********************************************
+
+-Fatal error 16 (Umblocked jobs exist in core)
+	*CPU is going into iddle mode when there are jobs to be run in memory
+
+-I/O queue 
+	*still need an I/O queue
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12/03/14
+
+*****************************Fixed*******************************************
+-Drum is bussy
+	*added a boolean variable "drumBusy" that is set to true everytime "siodrum" is called, and set to false everytime "drmInt" is called
+	*in order to execute sioDrum, you must firs check wether the drum is bussy or not.
+-Time slice exeeds the Max CPU time
+	*fixed, we can now change the variable TIMEQUANTUM to larger numbers.
+
+****************************Bugs to be fixed*************************************
+-Fatal Error 13 (leng specified or starting adress is incorrect)
+	*i added some debugging code on the program to print the memory we have and the location of free space. after comparing it to
+	the sos memory, there seems to be a problem of keeping track on the free space after a job is not immediately added to the 
+	memory after it has come to the drum.
+
+-I/O queue
+	*we are going to need an I/O queue in the future. Still not ready
+
+-Waiting queue to memory
+	*we need to be able to bring a job to memory when memory has enough space and when the drum is not bussy.
+		-annotaions are added on the program on where it needs to be put.
+
+PLEASE NOTE: There is various debbugin code added to the program, please do not delete, rather hide it from the output by surrounding it with comments. THANK YOU
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12/02/14
+
+******************Fixed**********************************
+
+-Solved the issue of keeping track of the running job used CPU time. (see "CPU time used" bug below)
+
+-Also solved the issue of Time quantum exeedeing MAX CPU time for a job.
+
+-Added a Static vaiable TIMEQUANTUM on the job table to be able to control the Round Robin time slice from one place.
+
+-Solved the issue that arised when a job did not completed during its given max CPU time. (this could be another bug; see "CPU time used" bug below.
+
+
+
+
+***********Bugs to be fixed*************
+-CPU Time Used
+	*i am not sure if we are keeping correct track of the CPU time used for the job, or is it that the job
+	can terminate before its given max CPU time? in other words, the Max CPU time variable is just a safety
+	meassure to make sure the job does not run forever like we discussed in class.
+-Time slice exeeds the Max CPU time
+	*when the TIMEQUANTUM vaiable is increased over maxcpu time for a job.
+	*need to add a checking method to adjust the timeSlice for the job
+
+-Drum is bussy
+	*need to add a waiting method to wait for drum to finish before telling it to swap a new incoming job. 
+
+-I/O queue
+	*We need an I/O queue since i expect to run into more than 1 job wanting to do I/O at the same time in the future.
+
+

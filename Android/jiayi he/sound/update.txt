@@ -1,0 +1,1 @@
+we stil need to implement the comfirm key in normal and hard mode by just copy the code from easy mode. 

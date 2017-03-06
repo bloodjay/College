@@ -1,0 +1,15 @@
+/*
+ * Sound class
+ */
+import java.applet.Applet;
+import java.applet.AudioClip;
+/**
+ *
+ * @author Gamer
+ */
+public class Sound {
+    public static final AudioClip BACK = Applet.newAudioClip(Sound.class.getResource("owl.wav"));
+    public static final AudioClip tro_ball = Applet.newAudioClip(Sound.class.getResource("throw.wav"));
+    public static final AudioClip Hit = Applet.newAudioClip(Sound.class.getResource("hit.wav"));
+    public static final AudioClip end = Applet.newAudioClip(Sound.class.getResource(""));
+}

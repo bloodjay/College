@@ -1,0 +1,1 @@
+implement comfirm key and time over on both medium mode and hard mode. We still need to do the Memory stuff!!!!

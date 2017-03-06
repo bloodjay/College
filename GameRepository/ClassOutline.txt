@@ -1,0 +1,46 @@
+++This a projected outline of the classes we'll be using and their API
+
+********************
+/
+/
+/ Please do not edit
+/ Unless in backbone
+/
+/
+********************
+
+-Dunkaprof
+---No methods currently, just where main is stored
+-Balls
+---Balls(int starting_count, int current_count) // Constructor
+---ball_thrown() // Decreases the current count by one
+---ball_gained() // Increases the current count by one
+---paint() // Displays graphic of the ball counter
+-Slider
+---Slider() // Sets the slider to a default speed of 10
+---TODO Slider(Velocity) // Sets the slider to any desired speed
+---Update() // Calculates the direction and position of the moving bar
+---getStartingWidth() // Returns the left most position of the moving rectangle
+---getEndingWidth() // Returns the right most position of the moving rectangle
+---paint() // Displays the graphic of the moving slider
+---setxVelocity(int velocity) // Update the velocity to whatever is desired
+-Quad
+---Quad() // Sets up our screen and initializes desired objects and a timer
+---paint() // Draws background and calls paint method for our objcts TODO draw background in a separate class
+---actionPerformed() // Updates image based on a timer currently
+---keyPressed() // Listener that currently stops slider on spacebar press and decreases ball count
+---keyReleased() // Nothing but necessary
+---keyTyped() // Nothing but necessary
+
+TODO
+-DunkTank
+-Score
+-Player
+-Line
+-Target
+-MainMenu
+--Instructions
+--NewGame
+--HighScores
+-Sounds
+-------AND MORE!

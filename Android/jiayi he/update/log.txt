@@ -1,0 +1,17 @@
+1.Make modification for calc class. Now, is it possible to calculate 3 digit add and subtraction.
+
+2.Add two round button. The + button can move but still need to fix the X and Y location.
+
+What we need
+
+Still need to draw retangle between numbers. 
+
+Implement 4 numbers calculate with Multiplication and division.
+
+Make the ontouchlistenner run correctly. 
+
+Score board.
+
+memery function.
+
+Music, sound effect.

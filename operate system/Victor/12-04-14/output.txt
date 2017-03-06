@@ -1,0 +1,3843 @@
+
+
+			OPERATING SYSTEM SIMULATION
+
+
+
+
+///////------*****STARTUP*****------///////
+
+*** Clock:  0, Job 1 Arriving Size:  18 Priority:  2
+ Max CPU Time:  23
+
+
+
+///////------*****CRINT*****------///////
+
+*** Clock:  0, Job 1 swapin started.  Size:  18
+ Starting address:  0
+
+
+
+				CORE MAP
+
+ Partition Job    Partition Job    Partition Job    Partition Job   
+
+      0	   0	      25    0	       50    0  	75    0
+      1	   0	      26    0	       51    0  	76    0
+      2	   0	      27    0	       52    0  	77    0
+      3	   0	      28    0	       53    0  	78    0
+      4	   0	      29    0	       54    0  	79    0
+      5	   0	      30    0	       55    0  	80    0
+      6	   0	      31    0	       56    0  	81    0
+      7	   0	      32    0	       57    0  	82    0
+      8	   0	      33    0	       58    0  	83    0
+      9	   0	      34    0	       59    0  	84    0
+     10	   0	      35    0	       60    0  	85    0
+     11	   0	      36    0	       61    0  	86    0
+     12	   0	      37    0	       62    0  	87    0
+     13	   0	      38    0	       63    0  	88    0
+     14	   0	      39    0	       64    0  	89    0
+     15	   0	      40    0	       65    0  	90    0
+     16	   0	      41    0	       66    0  	91    0
+     17	   0	      42    0	       67    0  	92    0
+     18	   0	      43    0	       68    0  	93    0
+     19	   0	      44    0	       69    0  	94    0
+     20	   0	      45    0	       70    0  	95    0
+     21	   0	      46    0	       71    0  	96    0
+     22	   0	      47    0	       72    0  	97    0
+     23	   0	      48    0	       73    0  	98    0
+     24	   0	      49    0	       74    0  	99    0
+
+*** Clock:  0, executive idling
+*** Clock:  17, Swap in completed for job 1
+
+
+				CORE MAP
+
+ Partition Job    Partition Job    Partition Job    Partition Job   
+
+      0	   1	      25    0	       50    0  	75    0
+      1	   1	      26    0	       51    0  	76    0
+      2	   1	      27    0	       52    0  	77    0
+      3	   1	      28    0	       53    0  	78    0
+      4	   1	      29    0	       54    0  	79    0
+      5	   1	      30    0	       55    0  	80    0
+      6	   1	      31    0	       56    0  	81    0
+      7	   1	      32    0	       57    0  	82    0
+      8	   1	      33    0	       58    0  	83    0
+      9	   1	      34    0	       59    0  	84    0
+     10	   1	      35    0	       60    0  	85    0
+     11	   1	      36    0	       61    0  	86    0
+     12	   1	      37    0	       62    0  	87    0
+     13	   1	      38    0	       63    0  	88    0
+     14	   1	      39    0	       64    0  	89    0
+     15	   1	      40    0	       65    0  	90    0
+     16	   1	      41    0	       66    0  	91    0
+     17	   1	      42    0	       67    0  	92    0
+     18	   0	      43    0	       68    0  	93    0
+     19	   0	      44    0	       69    0  	94    0
+     20	   0	      45    0	       70    0  	95    0
+     21	   0	      46    0	       71    0  	96    0
+     22	   0	      47    0	       72    0  	97    0
+     23	   0	      48    0	       73    0  	98    0
+     24	   0	      49    0	       74    0  	99    0
+
+
+
+///////------*****DRMINT*****------///////
+
+*** Clock:  17, Job 1 running size:  18 Priority:  2
+ Max CPU Time:  23, CPU time used:  0
+
+*** Clock:  20, Job 1 I/O Svc issued
+
+
+///////------*****SVC-I/O*****------///////
+
+*** Clock:  20, Job 1 I/O started
+*** Clock:  20, Job 1 running size:  18 Priority:  2
+ Max CPU Time:  23, CPU time used:  3
+
+*** Clock:  23, Job 1 block Svc issued
+
+
+///////------*****SVC-BLOCK*****------///////
+
+*** Clock:  23, executive idling
+*** Clock:  105, IO Completion for job 1
+
+
+///////------*****DSKINT*****------///////
+
+*** Clock:  105, Job 1 running size:  18 Priority:  2
+ Max CPU Time:  23, CPU time used:  6
+
+*** Clock:  108, Job 1 I/O Svc issued
+
+
+///////------*****SVC-I/O*****------///////
+
+*** Clock:  108, Job 1 I/O started
+*** Clock:  108, Job 1 running size:  18 Priority:  2
+ Max CPU Time:  23, CPU time used:  9
+
+*** Clock:  111, Job 1 block Svc issued
+
+
+///////------*****SVC-BLOCK*****------///////
+
+*** Clock:  111, executive idling
+*** Clock:  213, IO Completion for job 1
+
+
+///////------*****DSKINT*****------///////
+
+*** Clock:  213, Job 1 running size:  18 Priority:  2
+ Max CPU Time:  23, CPU time used:  12
+
+*** Clock:  216, Job 1 I/O Svc issued
+
+
+///////------*****SVC-I/O*****------///////
+
+*** Clock:  216, Job 1 I/O started
+*** Clock:  216, Job 1 running size:  18 Priority:  2
+ Max CPU Time:  23, CPU time used:  15
+
+*** Clock:  219, Job 1 block Svc issued
+
+
+///////------*****SVC-BLOCK*****------///////
+
+*** Clock:  219, executive idling
+*** Clock:  311, IO Completion for job 1
+
+
+///////------*****DSKINT*****------///////
+
+*** Clock:  311, Job 1 running size:  18 Priority:  2
+ Max CPU Time:  23, CPU time used:  18
+
+*** Clock:  314, Job 1 terminate Svc issued
+
+*** Clock:  314, Job 1 terminated normally (terminate svc issued) 
+ Response Time:  314 CPU time:  21 # I/O operations completed:  3
+ # I/O operations pending:  0
+
+
+
+				CORE MAP
+
+ Partition Job    Partition Job    Partition Job    Partition Job   
+
+      0	   0	      25    0	       50    0  	75    0
+      1	   0	      26    0	       51    0  	76    0
+      2	   0	      27    0	       52    0  	77    0
+      3	   0	      28    0	       53    0  	78    0
+      4	   0	      29    0	       54    0  	79    0
+      5	   0	      30    0	       55    0  	80    0
+      6	   0	      31    0	       56    0  	81    0
+      7	   0	      32    0	       57    0  	82    0
+      8	   0	      33    0	       58    0  	83    0
+      9	   0	      34    0	       59    0  	84    0
+     10	   0	      35    0	       60    0  	85    0
+     11	   0	      36    0	       61    0  	86    0
+     12	   0	      37    0	       62    0  	87    0
+     13	   0	      38    0	       63    0  	88    0
+     14	   0	      39    0	       64    0  	89    0
+     15	   0	      40    0	       65    0  	90    0
+     16	   0	      41    0	       66    0  	91    0
+     17	   0	      42    0	       67    0  	92    0
+     18	   0	      43    0	       68    0  	93    0
+     19	   0	      44    0	       69    0  	94    0
+     20	   0	      45    0	       70    0  	95    0
+     21	   0	      46    0	       71    0  	96    0
+     22	   0	      47    0	       72    0  	97    0
+     23	   0	      48    0	       73    0  	98    0
+     24	   0	      49    0	       74    0  	99    0
+
+
+
+///////------*****SVC-TERM*****------///////
+
+*** Clock:  314, executive idling
+*** Clock:  2600, Job 2 Arriving Size:  25 Priority:  1
+ Max CPU Time:  2500
+
+
+
+///////------*****CRINT*****------///////
+
+*** Clock:  2600, Job 2 swapin started.  Size:  25
+ Starting address:  0
+
+
+
+				CORE MAP
+
+ Partition Job    Partition Job    Partition Job    Partition Job   
+
+      0	   0	      25    0	       50    0  	75    0
+      1	   0	      26    0	       51    0  	76    0
+      2	   0	      27    0	       52    0  	77    0
+      3	   0	      28    0	       53    0  	78    0
+      4	   0	      29    0	       54    0  	79    0
+      5	   0	      30    0	       55    0  	80    0
+      6	   0	      31    0	       56    0  	81    0
+      7	   0	      32    0	       57    0  	82    0
+      8	   0	      33    0	       58    0  	83    0
+      9	   0	      34    0	       59    0  	84    0
+     10	   0	      35    0	       60    0  	85    0
+     11	   0	      36    0	       61    0  	86    0
+     12	   0	      37    0	       62    0  	87    0
+     13	   0	      38    0	       63    0  	88    0
+     14	   0	      39    0	       64    0  	89    0
+     15	   0	      40    0	       65    0  	90    0
+     16	   0	      41    0	       66    0  	91    0
+     17	   0	      42    0	       67    0  	92    0
+     18	   0	      43    0	       68    0  	93    0
+     19	   0	      44    0	       69    0  	94    0
+     20	   0	      45    0	       70    0  	95    0
+     21	   0	      46    0	       71    0  	96    0
+     22	   0	      47    0	       72    0  	97    0
+     23	   0	      48    0	       73    0  	98    0
+     24	   0	      49    0	       74    0  	99    0
+
+*** Clock:  2600, executive idling
+*** Clock:  2621, Swap in completed for job 2
+
+
+				CORE MAP
+
+ Partition Job    Partition Job    Partition Job    Partition Job   
+
+      0	   2	      25    0	       50    0  	75    0
+      1	   2	      26    0	       51    0  	76    0
+      2	   2	      27    0	       52    0  	77    0
+      3	   2	      28    0	       53    0  	78    0
+      4	   2	      29    0	       54    0  	79    0
+      5	   2	      30    0	       55    0  	80    0
+      6	   2	      31    0	       56    0  	81    0
+      7	   2	      32    0	       57    0  	82    0
+      8	   2	      33    0	       58    0  	83    0
+      9	   2	      34    0	       59    0  	84    0
+     10	   2	      35    0	       60    0  	85    0
+     11	   2	      36    0	       61    0  	86    0
+     12	   2	      37    0	       62    0  	87    0
+     13	   2	      38    0	       63    0  	88    0
+     14	   2	      39    0	       64    0  	89    0
+     15	   2	      40    0	       65    0  	90    0
+     16	   2	      41    0	       66    0  	91    0
+     17	   2	      42    0	       67    0  	92    0
+     18	   2	      43    0	       68    0  	93    0
+     19	   2	      44    0	       69    0  	94    0
+     20	   2	      45    0	       70    0  	95    0
+     21	   2	      46    0	       71    0  	96    0
+     22	   2	      47    0	       72    0  	97    0
+     23	   2	      48    0	       73    0  	98    0
+     24	   2	      49    0	       74    0  	99    0
+
+
+
+///////------*****DRMINT*****------///////
+
+*** Clock:  2621, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  0
+
+Clock:  2646, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  2646, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  25
+
+Clock:  2671, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  2671, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  50
+
+Clock:  2696, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  2696, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  75
+
+Clock:  2721, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  2721, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  100
+
+Clock:  2746, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  2746, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  125
+
+Clock:  2771, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  2771, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  150
+
+Clock:  2796, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  2796, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  175
+
+Clock:  2821, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  2821, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  200
+
+Clock:  2846, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  2846, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  225
+
+Clock:  2871, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  2871, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  250
+
+Clock:  2896, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  2896, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  275
+
+Clock:  2921, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  2921, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  300
+
+Clock:  2946, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  2946, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  325
+
+Clock:  2971, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  2971, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  350
+
+Clock:  2996, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  2996, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  375
+
+Clock:  3021, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3021, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  400
+
+Clock:  3046, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3046, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  425
+
+Clock:  3071, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3071, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  450
+
+Clock:  3096, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3096, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  475
+
+Clock:  3121, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3121, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  500
+
+*** Clock:  3121, Job 2 I/O Svc issued
+
+
+///////------*****SVC-I/O*****------///////
+
+*** Clock:  3121, Job 2 I/O started
+*** Clock:  3121, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  500
+
+Clock:  3146, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3146, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  525
+
+Clock:  3171, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3171, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  550
+
+Clock:  3196, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3196, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  575
+
+*** Clock:  3196, IO Completion for job 2
+
+
+///////------*****DSKINT*****------///////
+
+*** Clock:  3196, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  575
+
+Clock:  3221, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3221, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  600
+
+Clock:  3246, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3246, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  625
+
+Clock:  3271, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3271, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  650
+
+Clock:  3296, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3296, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  675
+
+Clock:  3321, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3321, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  700
+
+Clock:  3346, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3346, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  725
+
+Clock:  3371, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3371, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  750
+
+Clock:  3396, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3396, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  775
+
+Clock:  3421, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3421, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  800
+
+Clock:  3446, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3446, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  825
+
+Clock:  3471, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3471, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  850
+
+Clock:  3496, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3496, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  875
+
+Clock:  3521, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3521, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  900
+
+Clock:  3546, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3546, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  925
+
+Clock:  3571, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3571, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  950
+
+Clock:  3596, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3596, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  975
+
+Clock:  3621, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3621, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1000
+
+*** Clock:  3621, Job 2 block Svc issued
+
+
+///////------*****SVC-BLOCK*****------///////
+
+*** Clock:  3621, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1000
+
+Clock:  3646, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3646, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1025
+
+Clock:  3671, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3671, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1050
+
+Clock:  3696, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3696, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1075
+
+Clock:  3721, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3721, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1100
+
+Clock:  3746, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3746, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1125
+
+Clock:  3771, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3771, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1150
+
+Clock:  3796, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3796, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1175
+
+Clock:  3821, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3821, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1200
+
+Clock:  3846, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3846, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1225
+
+Clock:  3871, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3871, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1250
+
+Clock:  3896, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3896, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1275
+
+Clock:  3921, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3921, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1300
+
+Clock:  3946, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3946, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1325
+
+Clock:  3971, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3971, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1350
+
+Clock:  3996, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  3996, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1375
+
+Clock:  4021, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  4021, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1400
+
+Clock:  4046, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  4046, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1425
+
+Clock:  4071, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  4071, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1450
+
+Clock:  4096, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  4096, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1475
+
+Clock:  4121, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  4121, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1500
+
+*** Clock:  4121, Job 2 I/O Svc issued
+
+
+///////------*****SVC-I/O*****------///////
+
+*** Clock:  4121, Job 2 I/O started
+*** Clock:  4121, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1500
+
+Clock:  4146, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  4146, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1525
+
+Clock:  4171, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  4171, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1550
+
+Clock:  4196, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  4196, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1575
+
+Clock:  4221, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  4221, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1600
+
+*** Clock:  4236, IO Completion for job 2
+
+
+///////------*****DSKINT*****------///////
+
+*** Clock:  4236, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1615
+
+Clock:  4261, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  4261, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1640
+
+Clock:  4286, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  4286, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1665
+
+Clock:  4311, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  4311, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1690
+
+Clock:  4336, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  4336, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1715
+
+Clock:  4361, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  4361, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1740
+
+Clock:  4386, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  4386, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1765
+
+Clock:  4411, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  4411, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1790
+
+Clock:  4436, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  4436, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1815
+
+Clock:  4461, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  4461, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1840
+
+Clock:  4486, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  4486, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1865
+
+Clock:  4511, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  4511, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1890
+
+Clock:  4536, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  4536, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1915
+
+Clock:  4561, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  4561, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1940
+
+Clock:  4586, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  4586, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1965
+
+Clock:  4611, time run out on Job 2
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  4611, Job 2 running size:  25 Priority:  1
+ Max CPU Time:  2500, CPU time used:  1990
+
+*** Clock:  4621, Job 2 terminate Svc issued
+
+*** Clock:  4621, Job 2 terminated normally (terminate svc issued) 
+Dilation:  1.01 CPU time:  2000  # I/O operations completed:  2
+ # I/O operations pending:  0
+
+
+
+				CORE MAP
+
+ Partition Job    Partition Job    Partition Job    Partition Job   
+
+      0	   0	      25    0	       50    0  	75    0
+      1	   0	      26    0	       51    0  	76    0
+      2	   0	      27    0	       52    0  	77    0
+      3	   0	      28    0	       53    0  	78    0
+      4	   0	      29    0	       54    0  	79    0
+      5	   0	      30    0	       55    0  	80    0
+      6	   0	      31    0	       56    0  	81    0
+      7	   0	      32    0	       57    0  	82    0
+      8	   0	      33    0	       58    0  	83    0
+      9	   0	      34    0	       59    0  	84    0
+     10	   0	      35    0	       60    0  	85    0
+     11	   0	      36    0	       61    0  	86    0
+     12	   0	      37    0	       62    0  	87    0
+     13	   0	      38    0	       63    0  	88    0
+     14	   0	      39    0	       64    0  	89    0
+     15	   0	      40    0	       65    0  	90    0
+     16	   0	      41    0	       66    0  	91    0
+     17	   0	      42    0	       67    0  	92    0
+     18	   0	      43    0	       68    0  	93    0
+     19	   0	      44    0	       69    0  	94    0
+     20	   0	      45    0	       70    0  	95    0
+     21	   0	      46    0	       71    0  	96    0
+     22	   0	      47    0	       72    0  	97    0
+     23	   0	      48    0	       73    0  	98    0
+     24	   0	      49    0	       74    0  	99    0
+
+
+
+///////------*****SVC-TERM*****------///////
+
+*** Clock:  4621, executive idling
+*** Clock:  5900, Job 3 Arriving Size:  8 Priority:  2
+ Max CPU Time:  20
+
+
+
+///////------*****CRINT*****------///////
+
+*** Clock:  5900, Job 3 swapin started.  Size:  8
+ Starting address:  0
+
+
+
+				CORE MAP
+
+ Partition Job    Partition Job    Partition Job    Partition Job   
+
+      0	   0	      25    0	       50    0  	75    0
+      1	   0	      26    0	       51    0  	76    0
+      2	   0	      27    0	       52    0  	77    0
+      3	   0	      28    0	       53    0  	78    0
+      4	   0	      29    0	       54    0  	79    0
+      5	   0	      30    0	       55    0  	80    0
+      6	   0	      31    0	       56    0  	81    0
+      7	   0	      32    0	       57    0  	82    0
+      8	   0	      33    0	       58    0  	83    0
+      9	   0	      34    0	       59    0  	84    0
+     10	   0	      35    0	       60    0  	85    0
+     11	   0	      36    0	       61    0  	86    0
+     12	   0	      37    0	       62    0  	87    0
+     13	   0	      38    0	       63    0  	88    0
+     14	   0	      39    0	       64    0  	89    0
+     15	   0	      40    0	       65    0  	90    0
+     16	   0	      41    0	       66    0  	91    0
+     17	   0	      42    0	       67    0  	92    0
+     18	   0	      43    0	       68    0  	93    0
+     19	   0	      44    0	       69    0  	94    0
+     20	   0	      45    0	       70    0  	95    0
+     21	   0	      46    0	       71    0  	96    0
+     22	   0	      47    0	       72    0  	97    0
+     23	   0	      48    0	       73    0  	98    0
+     24	   0	      49    0	       74    0  	99    0
+
+*** Clock:  5900, executive idling
+*** Clock:  5919, Swap in completed for job 3
+
+
+				CORE MAP
+
+ Partition Job    Partition Job    Partition Job    Partition Job   
+
+      0	   3	      25    0	       50    0  	75    0
+      1	   3	      26    0	       51    0  	76    0
+      2	   3	      27    0	       52    0  	77    0
+      3	   3	      28    0	       53    0  	78    0
+      4	   3	      29    0	       54    0  	79    0
+      5	   3	      30    0	       55    0  	80    0
+      6	   3	      31    0	       56    0  	81    0
+      7	   3	      32    0	       57    0  	82    0
+      8	   0	      33    0	       58    0  	83    0
+      9	   0	      34    0	       59    0  	84    0
+     10	   0	      35    0	       60    0  	85    0
+     11	   0	      36    0	       61    0  	86    0
+     12	   0	      37    0	       62    0  	87    0
+     13	   0	      38    0	       63    0  	88    0
+     14	   0	      39    0	       64    0  	89    0
+     15	   0	      40    0	       65    0  	90    0
+     16	   0	      41    0	       66    0  	91    0
+     17	   0	      42    0	       67    0  	92    0
+     18	   0	      43    0	       68    0  	93    0
+     19	   0	      44    0	       69    0  	94    0
+     20	   0	      45    0	       70    0  	95    0
+     21	   0	      46    0	       71    0  	96    0
+     22	   0	      47    0	       72    0  	97    0
+     23	   0	      48    0	       73    0  	98    0
+     24	   0	      49    0	       74    0  	99    0
+
+
+
+///////------*****DRMINT*****------///////
+
+*** Clock:  5919, Job 3 running size:  8 Priority:  2
+ Max CPU Time:  20, CPU time used:  0
+
+*** Clock:  5922, Job 3 I/O Svc issued
+
+
+///////------*****SVC-I/O*****------///////
+
+*** Clock:  5922, Job 3 I/O started
+*** Clock:  5922, Job 3 running size:  8 Priority:  2
+ Max CPU Time:  20, CPU time used:  3
+
+*** Clock:  5925, Job 3 block Svc issued
+
+
+///////------*****SVC-BLOCK*****------///////
+
+*** Clock:  5925, executive idling
+*** Clock:  6047, IO Completion for job 3
+
+
+///////------*****DSKINT*****------///////
+
+*** Clock:  6047, Job 3 running size:  8 Priority:  2
+ Max CPU Time:  20, CPU time used:  6
+
+*** Clock:  6050, Job 3 I/O Svc issued
+
+
+///////------*****SVC-I/O*****------///////
+
+*** Clock:  6050, Job 3 I/O started
+*** Clock:  6050, Job 3 running size:  8 Priority:  2
+ Max CPU Time:  20, CPU time used:  9
+
+*** Clock:  6053, Job 3 block Svc issued
+
+
+///////------*****SVC-BLOCK*****------///////
+
+*** Clock:  6053, executive idling
+*** Clock:  6115, IO Completion for job 3
+
+
+///////------*****DSKINT*****------///////
+
+*** Clock:  6115, Job 3 running size:  8 Priority:  2
+ Max CPU Time:  20, CPU time used:  12
+
+*** Clock:  6118, Job 3 I/O Svc issued
+
+
+///////------*****SVC-I/O*****------///////
+
+*** Clock:  6118, Job 3 I/O started
+*** Clock:  6118, Job 3 running size:  8 Priority:  2
+ Max CPU Time:  20, CPU time used:  15
+
+*** Clock:  6121, Job 3 block Svc issued
+
+
+///////------*****SVC-BLOCK*****------///////
+
+*** Clock:  6121, executive idling
+*** Clock:  6263, IO Completion for job 3
+
+
+///////------*****DSKINT*****------///////
+
+*** Clock:  6263, Job 3 running size:  8 Priority:  2
+ Max CPU Time:  20, CPU time used:  18
+
+Clock:  6265, time run out on Job 3
+
+*** Clock:  6265, Job 3 terminated abnormally (max cpu time exceeded) 
+ Response Time:  365 CPU time:  20 # I/O operations completed:  3
+ # I/O operations pending:  0
+
+
+
+				CORE MAP
+
+ Partition Job    Partition Job    Partition Job    Partition Job   
+
+      0	   0	      25    0	       50    0  	75    0
+      1	   0	      26    0	       51    0  	76    0
+      2	   0	      27    0	       52    0  	77    0
+      3	   0	      28    0	       53    0  	78    0
+      4	   0	      29    0	       54    0  	79    0
+      5	   0	      30    0	       55    0  	80    0
+      6	   0	      31    0	       56    0  	81    0
+      7	   0	      32    0	       57    0  	82    0
+      8	   0	      33    0	       58    0  	83    0
+      9	   0	      34    0	       59    0  	84    0
+     10	   0	      35    0	       60    0  	85    0
+     11	   0	      36    0	       61    0  	86    0
+     12	   0	      37    0	       62    0  	87    0
+     13	   0	      38    0	       63    0  	88    0
+     14	   0	      39    0	       64    0  	89    0
+     15	   0	      40    0	       65    0  	90    0
+     16	   0	      41    0	       66    0  	91    0
+     17	   0	      42    0	       67    0  	92    0
+     18	   0	      43    0	       68    0  	93    0
+     19	   0	      44    0	       69    0  	94    0
+     20	   0	      45    0	       70    0  	95    0
+     21	   0	      46    0	       71    0  	96    0
+     22	   0	      47    0	       72    0  	97    0
+     23	   0	      48    0	       73    0  	98    0
+     24	   0	      49    0	       74    0  	99    0
+
+*** Clock:  6265, executive idling
+*** Clock:  7300, Job 4 Arriving Size:  10 Priority:  1
+ Max CPU Time:  3500
+
+
+
+///////------*****CRINT*****------///////
+
+*** Clock:  7300, Job 4 swapin started.  Size:  10
+ Starting address:  0
+
+
+
+				CORE MAP
+
+ Partition Job    Partition Job    Partition Job    Partition Job   
+
+      0	   0	      25    0	       50    0  	75    0
+      1	   0	      26    0	       51    0  	76    0
+      2	   0	      27    0	       52    0  	77    0
+      3	   0	      28    0	       53    0  	78    0
+      4	   0	      29    0	       54    0  	79    0
+      5	   0	      30    0	       55    0  	80    0
+      6	   0	      31    0	       56    0  	81    0
+      7	   0	      32    0	       57    0  	82    0
+      8	   0	      33    0	       58    0  	83    0
+      9	   0	      34    0	       59    0  	84    0
+     10	   0	      35    0	       60    0  	85    0
+     11	   0	      36    0	       61    0  	86    0
+     12	   0	      37    0	       62    0  	87    0
+     13	   0	      38    0	       63    0  	88    0
+     14	   0	      39    0	       64    0  	89    0
+     15	   0	      40    0	       65    0  	90    0
+     16	   0	      41    0	       66    0  	91    0
+     17	   0	      42    0	       67    0  	92    0
+     18	   0	      43    0	       68    0  	93    0
+     19	   0	      44    0	       69    0  	94    0
+     20	   0	      45    0	       70    0  	95    0
+     21	   0	      46    0	       71    0  	96    0
+     22	   0	      47    0	       72    0  	97    0
+     23	   0	      48    0	       73    0  	98    0
+     24	   0	      49    0	       74    0  	99    0
+
+*** Clock:  7300, executive idling
+*** Clock:  7315, Swap in completed for job 4
+
+
+				CORE MAP
+
+ Partition Job    Partition Job    Partition Job    Partition Job   
+
+      0	   4	      25    0	       50    0  	75    0
+      1	   4	      26    0	       51    0  	76    0
+      2	   4	      27    0	       52    0  	77    0
+      3	   4	      28    0	       53    0  	78    0
+      4	   4	      29    0	       54    0  	79    0
+      5	   4	      30    0	       55    0  	80    0
+      6	   4	      31    0	       56    0  	81    0
+      7	   4	      32    0	       57    0  	82    0
+      8	   4	      33    0	       58    0  	83    0
+      9	   4	      34    0	       59    0  	84    0
+     10	   0	      35    0	       60    0  	85    0
+     11	   0	      36    0	       61    0  	86    0
+     12	   0	      37    0	       62    0  	87    0
+     13	   0	      38    0	       63    0  	88    0
+     14	   0	      39    0	       64    0  	89    0
+     15	   0	      40    0	       65    0  	90    0
+     16	   0	      41    0	       66    0  	91    0
+     17	   0	      42    0	       67    0  	92    0
+     18	   0	      43    0	       68    0  	93    0
+     19	   0	      44    0	       69    0  	94    0
+     20	   0	      45    0	       70    0  	95    0
+     21	   0	      46    0	       71    0  	96    0
+     22	   0	      47    0	       72    0  	97    0
+     23	   0	      48    0	       73    0  	98    0
+     24	   0	      49    0	       74    0  	99    0
+
+
+
+///////------*****DRMINT*****------///////
+
+*** Clock:  7315, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  0
+
+*** Clock:  7330, Job 5 Arriving Size:  30 Priority:  2
+ Max CPU Time:  14
+
+
+
+///////------*****CRINT*****------///////
+
+*** Clock:  7330, Job 5 swapin started.  Size:  30
+ Starting address:  10
+
+
+
+				CORE MAP
+
+ Partition Job    Partition Job    Partition Job    Partition Job   
+
+      0	   4	      25    0	       50    0  	75    0
+      1	   4	      26    0	       51    0  	76    0
+      2	   4	      27    0	       52    0  	77    0
+      3	   4	      28    0	       53    0  	78    0
+      4	   4	      29    0	       54    0  	79    0
+      5	   4	      30    0	       55    0  	80    0
+      6	   4	      31    0	       56    0  	81    0
+      7	   4	      32    0	       57    0  	82    0
+      8	   4	      33    0	       58    0  	83    0
+      9	   4	      34    0	       59    0  	84    0
+     10	   0	      35    0	       60    0  	85    0
+     11	   0	      36    0	       61    0  	86    0
+     12	   0	      37    0	       62    0  	87    0
+     13	   0	      38    0	       63    0  	88    0
+     14	   0	      39    0	       64    0  	89    0
+     15	   0	      40    0	       65    0  	90    0
+     16	   0	      41    0	       66    0  	91    0
+     17	   0	      42    0	       67    0  	92    0
+     18	   0	      43    0	       68    0  	93    0
+     19	   0	      44    0	       69    0  	94    0
+     20	   0	      45    0	       70    0  	95    0
+     21	   0	      46    0	       71    0  	96    0
+     22	   0	      47    0	       72    0  	97    0
+     23	   0	      48    0	       73    0  	98    0
+     24	   0	      49    0	       74    0  	99    0
+
+*** Clock:  7330, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  15
+
+Clock:  7340, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  7340, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  25
+
+*** Clock:  7340, Job 6 Arriving Size:  47 Priority:  5
+ Max CPU Time:  65000
+
+
+
+///////------*****CRINT*****------///////
+
+*** Clock:  7340, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  25
+
+*** Clock:  7353, Swap in completed for job 5
+
+
+				CORE MAP
+
+ Partition Job    Partition Job    Partition Job    Partition Job   
+
+      0	   4	      25    5	       50    0  	75    0
+      1	   4	      26    5	       51    0  	76    0
+      2	   4	      27    5	       52    0  	77    0
+      3	   4	      28    5	       53    0  	78    0
+      4	   4	      29    5	       54    0  	79    0
+      5	   4	      30    5	       55    0  	80    0
+      6	   4	      31    5	       56    0  	81    0
+      7	   4	      32    5	       57    0  	82    0
+      8	   4	      33    5	       58    0  	83    0
+      9	   4	      34    5	       59    0  	84    0
+     10	   5	      35    5	       60    0  	85    0
+     11	   5	      36    5	       61    0  	86    0
+     12	   5	      37    5	       62    0  	87    0
+     13	   5	      38    5	       63    0  	88    0
+     14	   5	      39    5	       64    0  	89    0
+     15	   5	      40    0	       65    0  	90    0
+     16	   5	      41    0	       66    0  	91    0
+     17	   5	      42    0	       67    0  	92    0
+     18	   5	      43    0	       68    0  	93    0
+     19	   5	      44    0	       69    0  	94    0
+     20	   5	      45    0	       70    0  	95    0
+     21	   5	      46    0	       71    0  	96    0
+     22	   5	      47    0	       72    0  	97    0
+     23	   5	      48    0	       73    0  	98    0
+     24	   5	      49    0	       74    0  	99    0
+
+
+
+///////------*****DRMINT*****------///////
+
+*** Clock:  7353, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  38
+
+*** Clock:  7359, Job 7 Arriving Size:  27 Priority:  1
+ Max CPU Time:  100
+
+
+
+///////------*****CRINT*****------///////
+
+*** Clock:  7359, Job 6 swapin started.  Size:  47
+ Starting address:  40
+
+
+
+				CORE MAP
+
+ Partition Job    Partition Job    Partition Job    Partition Job   
+
+      0	   4	      25    5	       50    0  	75    0
+      1	   4	      26    5	       51    0  	76    0
+      2	   4	      27    5	       52    0  	77    0
+      3	   4	      28    5	       53    0  	78    0
+      4	   4	      29    5	       54    0  	79    0
+      5	   4	      30    5	       55    0  	80    0
+      6	   4	      31    5	       56    0  	81    0
+      7	   4	      32    5	       57    0  	82    0
+      8	   4	      33    5	       58    0  	83    0
+      9	   4	      34    5	       59    0  	84    0
+     10	   5	      35    5	       60    0  	85    0
+     11	   5	      36    5	       61    0  	86    0
+     12	   5	      37    5	       62    0  	87    0
+     13	   5	      38    5	       63    0  	88    0
+     14	   5	      39    5	       64    0  	89    0
+     15	   5	      40    0	       65    0  	90    0
+     16	   5	      41    0	       66    0  	91    0
+     17	   5	      42    0	       67    0  	92    0
+     18	   5	      43    0	       68    0  	93    0
+     19	   5	      44    0	       69    0  	94    0
+     20	   5	      45    0	       70    0  	95    0
+     21	   5	      46    0	       71    0  	96    0
+     22	   5	      47    0	       72    0  	97    0
+     23	   5	      48    0	       73    0  	98    0
+     24	   5	      49    0	       74    0  	99    0
+
+*** Clock:  7359, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  44
+
+Clock:  7365, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  7365, Job 5 running size:  30 Priority:  2
+ Max CPU Time:  14, CPU time used:  0
+
+*** Clock:  7368, Job 5 I/O Svc issued
+
+
+///////------*****SVC-I/O*****------///////
+
+*** Clock:  7368, Job 5 I/O started
+*** Clock:  7368, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  50
+
+*** Clock:  7384, Swap in completed for job 6
+
+
+				CORE MAP
+
+ Partition Job    Partition Job    Partition Job    Partition Job   
+
+      0	   4	      25    5	       50    6  	75    6
+      1	   4	      26    5	       51    6  	76    6
+      2	   4	      27    5	       52    6  	77    6
+      3	   4	      28    5	       53    6  	78    6
+      4	   4	      29    5	       54    6  	79    6
+      5	   4	      30    5	       55    6  	80    6
+      6	   4	      31    5	       56    6  	81    6
+      7	   4	      32    5	       57    6  	82    6
+      8	   4	      33    5	       58    6  	83    6
+      9	   4	      34    5	       59    6  	84    6
+     10	   5	      35    5	       60    6  	85    6
+     11	   5	      36    5	       61    6  	86    6
+     12	   5	      37    5	       62    6  	87    0
+     13	   5	      38    5	       63    6  	88    0
+     14	   5	      39    5	       64    6  	89    0
+     15	   5	      40    6	       65    6  	90    0
+     16	   5	      41    6	       66    6  	91    0
+     17	   5	      42    6	       67    6  	92    0
+     18	   5	      43    6	       68    6  	93    0
+     19	   5	      44    6	       69    6  	94    0
+     20	   5	      45    6	       70    6  	95    0
+     21	   5	      46    6	       71    6  	96    0
+     22	   5	      47    6	       72    6  	97    0
+     23	   5	      48    6	       73    6  	98    0
+     24	   5	      49    6	       74    6  	99    0
+
+
+
+///////------*****DRMINT*****------///////
+
+*** Clock:  7384, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  66
+
+Clock:  7393, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  7393, Job 5 running size:  30 Priority:  2
+ Max CPU Time:  14, CPU time used:  3
+
+*** Clock:  7396, Job 5 block Svc issued
+
+
+///////------*****SVC-BLOCK*****------///////
+
+*** Clock:  7396, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  0
+
+Clock:  7421, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  7421, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  75
+
+Clock:  7446, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  7446, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  25
+
+Clock:  7471, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  7471, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  100
+
+Clock:  7496, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  7496, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  50
+
+*** Clock:  7503, IO Completion for job 5
+
+
+///////------*****DSKINT*****------///////
+
+*** Clock:  7503, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  57
+
+Clock:  7528, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  7528, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  125
+
+Clock:  7553, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  7553, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  82
+
+Clock:  7578, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  7578, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  150
+
+Clock:  7603, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  7603, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  107
+
+Clock:  7628, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  7628, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  175
+
+Clock:  7653, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  7653, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  132
+
+Clock:  7678, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  7678, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  200
+
+Clock:  7703, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  7703, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  157
+
+Clock:  7728, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  7728, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  225
+
+Clock:  7753, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  7753, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  182
+
+Clock:  7778, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  7778, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  250
+
+Clock:  7803, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  7803, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  207
+
+Clock:  7828, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  7828, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  275
+
+Clock:  7853, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  7853, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  232
+
+Clock:  7878, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  7878, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  300
+
+Clock:  7903, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  7903, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  257
+
+Clock:  7928, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  7928, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  325
+
+Clock:  7953, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  7953, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  282
+
+Clock:  7978, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  7978, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  350
+
+Clock:  8003, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8003, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  307
+
+Clock:  8028, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8028, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  375
+
+Clock:  8053, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8053, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  332
+
+Clock:  8078, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8078, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  400
+
+Clock:  8103, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8103, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  357
+
+Clock:  8128, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8128, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  425
+
+Clock:  8153, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8153, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  382
+
+Clock:  8178, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8178, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  450
+
+Clock:  8203, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8203, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  407
+
+Clock:  8228, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8228, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  475
+
+Clock:  8253, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8253, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  432
+
+Clock:  8278, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8278, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  500
+
+*** Clock:  8278, Job 4 I/O Svc issued
+
+
+///////------*****SVC-I/O*****------///////
+
+*** Clock:  8278, Job 4 I/O started
+*** Clock:  8278, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  457
+
+Clock:  8303, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8303, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  500
+
+Clock:  8328, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8328, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  482
+
+*** Clock:  8333, IO Completion for job 4
+
+
+///////------*****DSKINT*****------///////
+
+*** Clock:  8333, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  487
+
+*** Clock:  8346, Job 6 I/O Svc issued
+
+
+///////------*****SVC-I/O*****------///////
+
+*** Clock:  8346, Job 6 I/O started
+*** Clock:  8346, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  525
+
+Clock:  8371, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8371, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  500
+
+Clock:  8383, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8383, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  550
+
+Clock:  8408, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8408, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  512
+
+*** Clock:  8431, IO Completion for job 6
+
+
+///////------*****DSKINT*****------///////
+
+*** Clock:  8431, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  535
+
+Clock:  8456, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8456, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  575
+
+Clock:  8481, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8481, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  560
+
+Clock:  8506, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8506, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  600
+
+Clock:  8531, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8531, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  585
+
+Clock:  8556, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8556, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  625
+
+Clock:  8581, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8581, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  610
+
+Clock:  8606, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8606, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  650
+
+Clock:  8631, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8631, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  635
+
+Clock:  8656, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8656, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  675
+
+Clock:  8681, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8681, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  660
+
+Clock:  8706, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8706, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  700
+
+Clock:  8731, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8731, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  685
+
+Clock:  8756, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8756, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  725
+
+Clock:  8781, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8781, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  710
+
+Clock:  8806, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8806, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  750
+
+Clock:  8831, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8831, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  735
+
+Clock:  8856, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8856, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  775
+
+Clock:  8881, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8881, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  760
+
+Clock:  8906, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8906, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  800
+
+Clock:  8931, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8931, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  785
+
+Clock:  8956, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8956, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  825
+
+Clock:  8981, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  8981, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  810
+
+Clock:  9006, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9006, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  850
+
+Clock:  9031, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9031, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  835
+
+Clock:  9056, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9056, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  875
+
+Clock:  9081, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9081, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  860
+
+Clock:  9106, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9106, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  900
+
+Clock:  9131, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9131, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  885
+
+Clock:  9156, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9156, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  925
+
+Clock:  9181, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9181, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  910
+
+Clock:  9206, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9206, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  950
+
+Clock:  9231, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9231, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  935
+
+Clock:  9256, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9256, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  975
+
+Clock:  9281, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9281, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  960
+
+Clock:  9306, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9306, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1000
+
+*** Clock:  9306, Job 4 block Svc issued
+
+
+///////------*****SVC-BLOCK*****------///////
+
+*** Clock:  9306, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  985
+
+*** Clock:  9321, Job 6 block Svc issued
+
+
+///////------*****SVC-BLOCK*****------///////
+
+*** Clock:  9321, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1000
+
+Clock:  9331, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9331, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1000
+
+Clock:  9356, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9356, Job 5 running size:  30 Priority:  2
+ Max CPU Time:  14, CPU time used:  6
+
+*** Clock:  9359, Job 5 I/O Svc issued
+
+
+///////------*****SVC-I/O*****------///////
+
+*** Clock:  9359, Job 5 I/O started
+*** Clock:  9359, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1010
+
+Clock:  9384, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9384, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1025
+
+Clock:  9409, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9409, Job 5 running size:  30 Priority:  2
+ Max CPU Time:  14, CPU time used:  9
+
+*** Clock:  9411, Job 5 terminate Svc issued
+
+*** Clock:  9411, Job 5 terminated normally (terminate svc issued) 
+ Response Time:  2081 CPU time:  11 # I/O operations completed:  1
+ # I/O operations pending:  1
+
+
+
+				CORE MAP
+
+ Partition Job    Partition Job    Partition Job    Partition Job   
+
+      0	   4	      25    5	       50    6  	75    6
+      1	   4	      26    5	       51    6  	76    6
+      2	   4	      27    5	       52    6  	77    6
+      3	   4	      28    5	       53    6  	78    6
+      4	   4	      29    5	       54    6  	79    6
+      5	   4	      30    5	       55    6  	80    6
+      6	   4	      31    5	       56    6  	81    6
+      7	   4	      32    5	       57    6  	82    6
+      8	   4	      33    5	       58    6  	83    6
+      9	   4	      34    5	       59    6  	84    6
+     10	   5	      35    5	       60    6  	85    6
+     11	   5	      36    5	       61    6  	86    6
+     12	   5	      37    5	       62    6  	87    0
+     13	   5	      38    5	       63    6  	88    0
+     14	   5	      39    5	       64    6  	89    0
+     15	   5	      40    6	       65    6  	90    0
+     16	   5	      41    6	       66    6  	91    0
+     17	   5	      42    6	       67    6  	92    0
+     18	   5	      43    6	       68    6  	93    0
+     19	   5	      44    6	       69    6  	94    0
+     20	   5	      45    6	       70    6  	95    0
+     21	   5	      46    6	       71    6  	96    0
+     22	   5	      47    6	       72    6  	97    0
+     23	   5	      48    6	       73    6  	98    0
+     24	   5	      49    6	       74    6  	99    0
+
+
+
+///////------*****SVC-TERM*****------///////
+
+*** Clock:  9411, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1035
+
+Clock:  9436, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9436, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1050
+
+Clock:  9461, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9461, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1060
+
+*** Clock:  9464, IO Completion for job 5
+
+
+///////------*****DSKINT*****------///////
+
+*** Clock:  9464, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1063
+
+Clock:  9489, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9489, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1088
+
+Clock:  9514, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9514, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1113
+
+Clock:  9539, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9539, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1138
+
+Clock:  9564, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9564, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1163
+
+Clock:  9589, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9589, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1188
+
+Clock:  9614, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9614, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1213
+
+Clock:  9639, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9639, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1238
+
+Clock:  9664, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9664, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1263
+
+Clock:  9689, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9689, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1288
+
+Clock:  9714, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9714, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1313
+
+Clock:  9739, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9739, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1338
+
+Clock:  9764, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9764, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1363
+
+Clock:  9789, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9789, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1388
+
+Clock:  9814, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9814, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1413
+
+Clock:  9839, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9839, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1438
+
+Clock:  9864, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9864, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1463
+
+Clock:  9889, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9889, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1488
+
+*** Clock:  9901, Job 6 I/O Svc issued
+
+
+///////------*****SVC-I/O*****------///////
+
+*** Clock:  9901, Job 6 I/O started
+*** Clock:  9901, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1500
+
+Clock:  9914, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9914, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1513
+
+Clock:  9939, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9939, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1538
+
+Clock:  9964, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9964, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1563
+
+Clock:  9989, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  9989, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1588
+
+*** Clock:  9996, IO Completion for job 6
+
+
+///////------*****DSKINT*****------///////
+
+*** Clock:  9996, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1595
+
+Clock:  10021, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10021, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1620
+
+Clock:  10046, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10046, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1645
+
+Clock:  10071, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10071, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1670
+
+Clock:  10096, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10096, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1695
+
+Clock:  10121, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10121, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1720
+
+Clock:  10146, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10146, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1745
+
+Clock:  10171, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10171, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1770
+
+Clock:  10196, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10196, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1795
+
+*** Clock:  10209, Job 8 Arriving Size:  10 Priority:  1
+ Max CPU Time:  10
+
+
+
+///////------*****CRINT*****------///////
+
+*** Clock:  10209, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1808
+
+Clock:  10221, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10221, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1820
+
+Clock:  10246, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10246, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1845
+
+Clock:  10271, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10271, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1870
+
+Clock:  10296, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10296, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1895
+
+Clock:  10321, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10321, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1920
+
+Clock:  10346, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10346, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1945
+
+Clock:  10371, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10371, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1970
+
+Clock:  10396, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10396, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  1995
+
+*** Clock:  10401, Job 6 block Svc issued
+
+
+///////------*****SVC-BLOCK*****------///////
+
+*** Clock:  10401, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2000
+
+Clock:  10421, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10421, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1075
+
+Clock:  10446, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10446, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2020
+
+Clock:  10471, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10471, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1100
+
+Clock:  10496, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10496, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2045
+
+Clock:  10521, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10521, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1125
+
+Clock:  10546, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10546, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2070
+
+Clock:  10571, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10571, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1150
+
+Clock:  10596, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10596, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2095
+
+Clock:  10621, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10621, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1175
+
+Clock:  10646, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10646, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2120
+
+Clock:  10671, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10671, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1200
+
+Clock:  10696, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10696, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2145
+
+Clock:  10721, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10721, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1225
+
+Clock:  10746, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10746, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2170
+
+Clock:  10771, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10771, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1250
+
+Clock:  10796, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10796, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2195
+
+Clock:  10821, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10821, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1275
+
+Clock:  10846, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10846, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2220
+
+Clock:  10871, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10871, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1300
+
+Clock:  10896, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10896, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2245
+
+Clock:  10921, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10921, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1325
+
+Clock:  10946, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10946, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2270
+
+Clock:  10971, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10971, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1350
+
+Clock:  10996, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  10996, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2295
+
+Clock:  11021, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11021, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1375
+
+Clock:  11046, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11046, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2320
+
+Clock:  11071, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11071, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1400
+
+Clock:  11096, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11096, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2345
+
+Clock:  11121, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11121, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1425
+
+Clock:  11146, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11146, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2370
+
+Clock:  11171, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11171, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1450
+
+Clock:  11196, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11196, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2395
+
+Clock:  11221, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11221, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1475
+
+Clock:  11246, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11246, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2420
+
+Clock:  11271, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11271, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1500
+
+*** Clock:  11271, Job 4 I/O Svc issued
+
+
+///////------*****SVC-I/O*****------///////
+
+*** Clock:  11271, Job 4 I/O started
+*** Clock:  11271, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2445
+
+Clock:  11296, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11296, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1500
+
+Clock:  11321, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11321, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2470
+
+Clock:  11346, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11346, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1525
+
+*** Clock:  11346, IO Completion for job 4
+
+
+///////------*****DSKINT*****------///////
+
+*** Clock:  11346, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1525
+
+Clock:  11371, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11371, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1550
+
+Clock:  11396, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11396, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1575
+
+Clock:  11421, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11421, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1600
+
+Clock:  11446, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11446, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1625
+
+Clock:  11471, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11471, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1650
+
+Clock:  11496, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11496, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1675
+
+Clock:  11521, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11521, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1700
+
+Clock:  11546, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11546, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1725
+
+Clock:  11571, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11571, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1750
+
+Clock:  11596, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11596, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1775
+
+Clock:  11621, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11621, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1800
+
+Clock:  11646, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11646, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1825
+
+Clock:  11671, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11671, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1850
+
+Clock:  11696, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11696, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1875
+
+Clock:  11721, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11721, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1900
+
+Clock:  11746, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11746, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1925
+
+Clock:  11771, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11771, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1950
+
+Clock:  11796, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11796, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  1975
+
+Clock:  11821, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11821, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2000
+
+*** Clock:  11821, Job 4 block Svc issued
+
+
+///////------*****SVC-BLOCK*****------///////
+
+*** Clock:  11821, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2000
+
+Clock:  11846, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11846, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2495
+
+*** Clock:  11851, Job 6 I/O Svc issued
+
+
+///////------*****SVC-I/O*****------///////
+
+*** Clock:  11851, Job 6 I/O started
+*** Clock:  11851, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2025
+
+Clock:  11876, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11876, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2500
+
+Clock:  11896, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11896, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2050
+
+Clock:  11921, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11921, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2520
+
+Clock:  11946, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11946, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2075
+
+*** Clock:  11966, IO Completion for job 6
+
+
+///////------*****DSKINT*****------///////
+
+*** Clock:  11966, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2095
+
+Clock:  11991, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  11991, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2120
+
+Clock:  12016, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12016, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2145
+
+Clock:  12041, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12041, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2170
+
+Clock:  12066, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12066, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2195
+
+Clock:  12091, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12091, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2220
+
+Clock:  12116, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12116, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2245
+
+Clock:  12141, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12141, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2270
+
+Clock:  12166, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12166, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2295
+
+Clock:  12191, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12191, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2320
+
+Clock:  12216, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12216, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2345
+
+Clock:  12241, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12241, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2370
+
+Clock:  12266, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12266, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2395
+
+Clock:  12291, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12291, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2420
+
+Clock:  12316, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12316, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2445
+
+Clock:  12341, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12341, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2470
+
+Clock:  12366, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12366, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2495
+
+*** Clock:  12371, Job 4 I/O Svc issued
+
+
+///////------*****SVC-I/O*****------///////
+
+*** Clock:  12371, Job 4 I/O started
+*** Clock:  12371, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2500
+
+Clock:  12391, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12391, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2520
+
+Clock:  12416, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12416, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2545
+
+Clock:  12441, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12441, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2570
+
+Clock:  12466, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12466, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2595
+
+Clock:  12491, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12491, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2620
+
+*** Clock:  12496, IO Completion for job 4
+
+
+///////------*****DSKINT*****------///////
+
+*** Clock:  12496, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2625
+
+Clock:  12521, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12521, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2650
+
+Clock:  12546, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12546, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2675
+
+Clock:  12571, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12571, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2700
+
+Clock:  12596, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12596, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2725
+
+Clock:  12621, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12621, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2750
+
+Clock:  12646, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12646, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2775
+
+Clock:  12671, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12671, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2800
+
+Clock:  12696, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12696, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2825
+
+Clock:  12721, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12721, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2850
+
+Clock:  12746, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12746, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2875
+
+Clock:  12771, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12771, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2900
+
+Clock:  12796, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12796, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2925
+
+Clock:  12821, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12821, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2950
+
+Clock:  12846, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12846, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  2975
+
+Clock:  12871, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12871, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  3000
+
+*** Clock:  12871, Job 4 block Svc issued
+
+
+///////------*****SVC-BLOCK*****------///////
+
+*** Clock:  12871, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  3000
+
+Clock:  12896, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12896, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2545
+
+Clock:  12921, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12921, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  3025
+
+Clock:  12946, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12946, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2570
+
+*** Clock:  12949, Job 9 Arriving Size:  14 Priority:  2
+ Max CPU Time:  1500
+
+
+
+///////------*****CRINT*****------///////
+
+*** Clock:  12949, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2573
+
+Clock:  12971, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12971, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  3050
+
+Clock:  12996, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  12996, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2595
+
+Clock:  13021, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  13021, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  3075
+
+Clock:  13046, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  13046, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2620
+
+Clock:  13071, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  13071, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  3100
+
+Clock:  13096, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  13096, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2645
+
+Clock:  13121, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  13121, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  3125
+
+Clock:  13146, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  13146, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2670
+
+Clock:  13171, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  13171, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  3150
+
+Clock:  13196, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  13196, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2695
+
+Clock:  13221, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  13221, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  3175
+
+Clock:  13246, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  13246, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2720
+
+Clock:  13271, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  13271, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  3200
+
+Clock:  13296, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  13296, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2745
+
+Clock:  13321, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  13321, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  3225
+
+Clock:  13346, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  13346, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2770
+
+Clock:  13371, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  13371, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  3250
+
+Clock:  13396, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  13396, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2795
+
+Clock:  13421, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  13421, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  3275
+
+Clock:  13446, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  13446, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2820
+
+Clock:  13471, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  13471, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  3300
+
+Clock:  13496, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  13496, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2845
+
+Clock:  13521, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  13521, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  3325
+
+Clock:  13546, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  13546, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2870
+
+Clock:  13571, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  13571, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  3350
+
+Clock:  13596, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  13596, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2895
+
+Clock:  13621, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  13621, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  3375
+
+Clock:  13646, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  13646, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2920
+
+Clock:  13671, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  13671, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  3400
+
+Clock:  13696, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  13696, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2945
+
+Clock:  13721, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  13721, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  3425
+
+Clock:  13746, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  13746, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2970
+
+Clock:  13771, time run out on Job 6
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  13771, Job 4 running size:  10 Priority:  1
+ Max CPU Time:  3500, CPU time used:  3450
+
+Clock:  13796, time run out on Job 4
+
+
+///////------*****TRO*****------///////
+
+*** Clock:  13796, Job 6 running size:  47 Priority:  5
+ Max CPU Time:  65000, CPU time used:  2995
+
+*** Clock:  13801, Job 6 block Svc issued
+
+
+///////------*****SVC-BLOCK*****------///////
+
+*** Clock:  13801, executive idling
+
+
+
+*** Clock:  13801, *** FATAL ERROR:  15
+
+*** IDLE ERROR ** UNBLOCKED JOBS EXISTS IN CORE ***
+
+Current Value of Registers:
+
+	a = 1
+	p [1..5] =  6   40   47   25   13801  
+
+
+
+                          FINAL STATISTICS
+
+
+
+ * * * SYSTEM STATUS AT 13801 * * *
+ ===================================
+
+ CPU:  idle
+ Disk:  idle
+ Drum:  idle
+Memory:  57 K words in use
+Average dilation:  1.01
+Average Response time:  920.00
+
+
+				CORE MAP
+
+ Partition Job    Partition Job    Partition Job    Partition Job   
+
+      0	   4	      25    0	       50    6  	75    6
+      1	   4	      26    0	       51    6  	76    6
+      2	   4	      27    0	       52    6  	77    6
+      3	   4	      28    0	       53    6  	78    6
+      4	   4	      29    0	       54    6  	79    6
+      5	   4	      30    0	       55    6  	80    6
+      6	   4	      31    0	       56    6  	81    6
+      7	   4	      32    0	       57    6  	82    6
+      8	   4	      33    0	       58    6  	83    6
+      9	   4	      34    0	       59    6  	84    6
+     10	   0	      35    0	       60    6  	85    6
+     11	   0	      36    0	       61    6  	86    6
+     12	   0	      37    0	       62    6  	87    0
+     13	   0	      38    0	       63    6  	88    0
+     14	   0	      39    0	       64    6  	89    0
+     15	   0	      40    6	       65    6  	90    0
+     16	   0	      41    6	       66    6  	91    0
+     17	   0	      42    6	       67    6  	92    0
+     18	   0	      43    6	       68    6  	93    0
+     19	   0	      44    6	       69    6  	94    0
+     20	   0	      45    6	       70    6  	95    0
+     21	   0	      46    6	       71    6  	96    0
+     22	   0	      47    6	       72    6  	97    0
+     23	   0	      48    6	       73    6  	98    0
+     24	   0	      49    6	       74    6  	99    0
+
+
+
+			JOBTABLE
+
+Job#  Size  Time CPUTime MaxCPU  I/O's Priority Blocked  Latched InCore Term
+          Arrived  Used  Time   Pending
+
+
+   4   10    7300   3475   3500    0      1       no      no      yes     no 
+   8   10   10209      0     10    0      1       no      no      no      no 
+   6   47    7340   3000  65000    0      5       no      no      yes     no 
+   7   27    7359      0    100    0      1       no      no      no      no 
+   9   14   12949      0   1500    0      2       no      no      no      no 
+
+
+
+
+
+
+ Total jobs:  9	terminated:  4
+ % utilization   CPU:  61.79   disk:  11.59   drum:  0.87   memory:  17.44
+
+

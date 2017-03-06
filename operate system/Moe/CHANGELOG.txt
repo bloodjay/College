@@ -1,0 +1,15 @@
+CHANGELOG:
+
+11/17/2014
+  - Created extremely basic skeleton for os.java file
+  - Wrote required functions (startup, crint, dskint, drmint, tro, svc) with return statement in them
+
+11/30/2014
+  - Created all the required functions
+  - Created jobTable class
+  - Created CPUScheduler class
+  - Created memManager class
+  
+  *progress so far - a few jobs complete, but they only complete by
+    messing around with the time slice. Need to figure out how to 
+    fix time quantum problem so jobs don't exceed their max CPU time
